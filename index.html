@@ -15,46 +15,50 @@
             height="36"
           />
         </a>
-        <nav class="header-nav">
-          <label class="search-wrapper">
-            <input
-              class="header-search"
-              type="search"
-              placeholder="Поиск по сайту"
-            />
+        <div class="search-wrapper">
+          <label class="header-search visualy-hidden" for="search">
+            Поиск по сайту
           </label>
+          <input
+            id="search"
+            class="input-search"
+            type="search"
+            placeholder="Поиск по сайту"
+          />
+          <button type="button">Найти</button>
+        </div>
+        <ul class="user-menu">
+          <li><a href="#" class="menu-item menu-login">Войти</a></li>
+          <li><a href="#" class="menu-item menu-diff">Сравнить</a></li>
+          <li><a href="#" class="menu-item menu-cart">Корзина</a></li>
+        </ul>
+        <nav class="header-nav">
           <ul class="nav-list">
-            <li><a href="#" class="nav-item">Войти</a></li>
-            <li><a href="#" class="nav-item">Сравнить</a></li>
-            <li><a href="#" class="nav-item">Корзина</a></li>
+            <li><a href="#" class="nav-item">Каталог товаров</a></li>
+            <li><a href="#" class="nav-item">Доставка</a></li>
+            <li><a href="#" class="nav-item">Гарантия</a></li>
+            <li><a href="#" class="nav-item">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="user-menu">
-          <li><a href="#" class="menu-item">Каталог товаров</a></li>
-          <li><a href="#" class="menu-item">Доставка</a></li>
-          <li><a href="#" class="menu-item">Гарантия</a></li>
-          <li><a href="#" class="menu-item">Контакты</a></li>
-        </ul>
       </header>
       <main class="main-container">
         <h1 class="visualy-hidden">Магазин гаджетов «Device»</h1>
         <!-- Скоро тут будет блок галерея и доставка -->
         <section class="about">
-          <h2>
-            <span class="about-header">
+          <div class="about-container">
+            <h2>
               О нас
-            </span>
-          </h2>
-          <p>
-            Огромный выбор гаджетов не оставит равнодушным гика, который есть в
-            каждом из нас.
-          </p>
+            </h2>
+            <p>
+              Огромный выбор гаджетов не оставит равнодушным гика, который есть
+              в каждом из нас.
+            </p>
 
-          <p>
-            Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE
-            работает со многими транспортными компаниями:
-          </p>
-
+            <p>
+              Мы можем доставить ваш товар в самые отдаленные точки России!
+              DEVICE работает со многими транспортными компаниями:
+            </p>
+          </div>
           <ul class="about-cities-list">
             <li>Деловые Линии</li>
             <li>Автотрейдинг</li>
@@ -63,56 +67,100 @@
           <a href="#" class="button">Подробнее о нас</a>
         </section>
         <section class="contacts">
-          <h2>
-            <span class="contacts-header">
+          <div class="contacts-container">
+            <h2>
               Контакты
-            </span>
-          </h2>
-          <p>
-            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
-            проверить работоспособность покупки. Всякое бывает.
-          </p>
-          <div class="map">
-            <img src="img/map.png" alt="Карта" />
+            </h2>
+            <p>
+              Вы можете забрать товар сами, заехав в наш офис. Заодно, вы
+              сможете проверить работоспособность покупки. Всякое бывает.
+            </p>
+            <div
+              class="map"
+              aria-label="Карта, адрес магазина: г. Москва, ул. Строителей, 15"
+            ></div>
+            <a href="#" class="button">Напишите нам</a>
           </div>
-          <a href="#" class="button">Напишите нам</a>
         </section>
       </main>
       <footer class="footer">
-        <a class="footer-logo">
-          <img
-            src="img/logo.svg"
-            alt="Логотип магазина «Device»"
-            width="164"
-            height="36"
-          />
-        </a>
-        <div class="footer-address">г. Москва, ул. Строителей, 15</div>
-        <ul class="footer-nav">
-          <li><a href="#" class="nav-item">Доставка</a></li>
-          <li><a href="#" class="nav-item">Гарантия</a></li>
-          <li><a href="#" class="nav-item">Контакты</a></li>
-        </ul>
-        <ul class="footer-social">
-          <li><a href="#" class="social-item">facebook</a></li>
-          <li><a href="#" class="social-item">instagram</a></li>
-          <li><a href="#" class="social-item">twitter</a></li>
-        </ul>
-        <ul class="footer-menu">
-          <li><a href="#" class="menu-item">Войти</a></li>
-          <li><a href="#" class="menu-item">Сравнить</a></li>
-          <li><a href="#" class="menu-item">Корзина</a></li>
-        </ul>
-        <span class="footer-phone">
-          Тел.:
-          <a href="tel:+74954959595">
-            +7 (495) 495-95-95
+        <div class="footer-top">
+          <a class="footer-logo">
+            <img
+              src="img/logo.svg"
+              alt="Логотип магазина «Device»"
+              width="164"
+              height="36"
+            />
           </a>
-        </span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-logo">
-          HTML Академия
-        </a>
+          <ul class="footer-menu">
+            <li><a href="#" class="menu-item menu-login">Войти</a></li>
+            <li><a href="#" class="menu-item menu-diff">Сравнить</a></li>
+            <li><a href="#" class="menu-item menu-cart">Корзина</a></li>
+          </ul>
+        </div>
+        <div class="footer-middle">
+          <p class="footer-address">г. Москва, ул. Строителей, 15</p>
+          <ul class="footer-nav">
+            <li><a href="#" class="nav-item">Доставка</a></li>
+            <li><a href="#" class="nav-item">Гарантия</a></li>
+            <li><a href="#" class="nav-item">Контакты</a></li>
+          </ul>
+          <span class="footer-phone">
+            Тел.:
+            <a href="tel:+74954959595">
+              +7 (495) 495-95-95
+            </a>
+          </span>
+        </div>
+        <div class="footer-bottom">
+          <ul class="footer-social">
+            <li><a href="#" class="social-item social-face">facebook</a></li>
+            <li><a href="#" class="social-item social-inst">instagram</a></li>
+            <li><a href="#" class="social-item social-twit">twitter</a></li>
+          </ul>
+          <a
+            href="https://htmlacademy.ru/intensive/htmlcss"
+            class="academy-logo"
+          >
+            HTML Академия
+          </a>
+        </div>
       </footer>
     </div>
+    <section class="modal-writeus">
+      <div class="modal-writeus-wrapper">
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <label class="modal-input input-name">
+            <span>Ваше имя:</span>
+            <input type="text" name="username" placeholder="Имя Фамилия" />
+          </label>
+          <label class="modal-input input-email">
+            <span>Ваше e-mail:</span>
+            <input type="email" name="email" placeholder="email@example.com" />
+          </label>
+          <label class="modal-input input-texarea">
+            <span>Текст письма:</span>
+            <textarea
+              rows="6"
+              cols="50"
+              type="text"
+              name="email"
+              placeholder="В свободной форме"
+            ></textarea>
+          </label>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="button-close" type="button">Закрыть</button>
+      </div>
+    </section>
+    <section class="modal-map">
+      <div class="modal-map-wrapper">
+        <div class="map" id="map">
+          <!-- тут будет карта -->
+        </div>
+        <button class="button-close" type="button">Закрыть</button>
+      </div>
+    </section>
   </body>
 </html>
